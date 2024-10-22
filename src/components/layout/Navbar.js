@@ -88,7 +88,7 @@ const Navbar = () => {
                       <a
                         href={sub.href}
                         key={subIndex}
-                        className="block px-6 py-4 text-slate-900 hover:font-semibold border-solid border-b-2 border-grey-500"
+                        className="block px-6 py-4 text-slate-900 hover:font-semibold border-solid border-b border-grey-500"
                       >
                         {sub.name}
                       </a>
