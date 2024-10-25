@@ -31,18 +31,18 @@ const Navbar = () => {
       name: "Layanan Kami",
       href: null,
       subMenu: [
-        { name: "Tabungan", href: "/about" },
-        { name: "Deposito", href: "/about" },
-        { name: "Kredit", href: "/about" },
+        { name: "Tabungan", href: "/services" },
+        { name: "Deposito", href: "/services" },
+        { name: "Kredit", href: "/services" },
       ],
     },
     {
       name: "Laporan",
       href: null,
       subMenu: [
-        { name: "Laporan Keuangan", href: "/about" },
-        { name: "Laporan 1", href: "/about" },
-        { name: "Laporan 2", href: "/about" },
+        { name: "Laporan Keuangan", href: "/report" },
+        { name: "Laporan 1", href: "/report" },
+        { name: "Laporan 2", href: "/report" },
       ],
     },
     { name: "Blog", href: "/blog", subMenu: null },
@@ -50,8 +50,11 @@ const Navbar = () => {
 
   return (
     <nav
+      // className={`fixed top-0 w-full z-10 transition-colors duration-300 ease-in-out  ${
+      //   navbarBg ? "bg-slate-900" : "bg-slate-900 md:bg-transparent"
+      // }`}
       className={`fixed top-0 w-full z-10 transition-colors duration-300 ease-in-out  ${
-        navbarBg ? "bg-slate-900" : "bg-slate-900 md:bg-transparent"
+        navbarBg ? "bg-slate-900" : "bg-slate-900"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
