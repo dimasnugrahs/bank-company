@@ -26,10 +26,10 @@ const ServicesSection = () => {
       <div className="bg-gray-200 px-2 pt-10 pb-24">
         <div id="features" className="mx-auto max-w-6xl">
           <p className="text-center text-base font-semibold leading-7 text-primary-500">
-            Features
+            Produk Terbaik Kami.
           </p>
           <h2 className="text-center font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-            Writing has never been so easy
+            Solusi perbankan yang aman, nyaman dan terpercaya.
           </h2>
           <ul className="mt-16 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3">
             {products.map((product, key) => (
@@ -49,7 +49,7 @@ const ServicesSection = () => {
                   <p className="mt-1.5 mb-4 text-sm leading-6 text-secondary-500 italic">
                     {product.subtitle}
                   </p>
-                  <p className="mt-1.5 text-sm leading-6 text-secondary-500">
+                  <p className="mt-1.5 text-sm leading-6 text-secondary-500 text-justify px-4">
                     {product.description}
                   </p>
                 </a>
