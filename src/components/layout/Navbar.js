@@ -1,3 +1,4 @@
+// Navbar.js
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -29,7 +30,7 @@ const Navbar = () => {
     { name: "Tentang Kami", href: "/about", subMenu: null },
     {
       name: "Layanan Kami",
-      href: null,
+      href: "#",
       subMenu: [
         { name: "Tabungan", href: "/services" },
         { name: "Deposito", href: "/services" },
@@ -38,7 +39,7 @@ const Navbar = () => {
     },
     {
       name: "Laporan",
-      href: null,
+      href: "#",
       subMenu: [
         { name: "Laporan Keuangan", href: "/report" },
         { name: "Laporan 1", href: "/report" },
@@ -50,25 +51,23 @@ const Navbar = () => {
 
   return (
     <nav
-      // className={`fixed top-0 w-full z-10 transition-colors duration-300 ease-in-out  ${
-      //   navbarBg ? "bg-slate-900" : "bg-slate-900 md:bg-transparent"
-      // }`}
-      className={`fixed top-0 w-full z-10 transition-colors duration-300 ease-in-out  ${
+      className={`fixed top-0 w-full z-10 transition-colors duration-300 ease-in-out ${
         navbarBg ? "bg-slate-900" : "bg-slate-900"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
             <h1 className="text-white font-bold">Logo</h1>
           </div>
 
           <div className="hidden md:flex flex-grow justify-center space-x-4">
             {menus.map((menu, index) => (
-              <div key={index} className="relative group">
-                {menu.subMenu === null ? (
+              <div key={index} className="relative group py-6">
+                {menu.subMenu ? (
                   <a
-                    href={menu.href}
+                    href="#"
+                    onClick={(e) => e.preventDefault()} // Mencegah aksi klik pada menu yang memiliki sub-menu
                     className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white"
                   >
                     {menu.name}
@@ -81,9 +80,10 @@ const Navbar = () => {
                     {menu.name}
                   </a>
                 )}
+
                 {/* Sub Menu */}
                 {menu.subMenu && (
-                  <div className="absolute left-0 mt-4 w-64 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity ">
+                  <div className="absolute left-0 mt-4 w-64 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
                     <div className="absolute top-0 left-4 -mt-2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-transparent border-b-white"></div>
                     {menu.subMenu.map((sub, subIndex) => (
                       <a
@@ -98,21 +98,6 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-          </div>
-
-          <div className="">
-            {/* <a
-              href="/"
-              className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white"
-            >
-              Indonesia
-            </a> */}
-            <button className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white">
-              Kontak Kami
-            </button>
-            {/* <button className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white">
-              Dark Mode
-            </button> */}
           </div>
 
           <div className="md:hidden">
