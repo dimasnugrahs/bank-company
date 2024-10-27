@@ -52,11 +52,11 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-10 transition-colors duration-300 ease-in-out ${
-        navbarBg ? "bg-slate-900" : "bg-slate-900"
+        navbarBg ? "bg-slate-900" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between py-4 md:py-0">
           <div className="flex-shrink-0">
             <h1 className="text-white font-bold">Logo</h1>
           </div>
@@ -67,7 +67,7 @@ const Navbar = () => {
                 {menu.subMenu ? (
                   <a
                     href="#"
-                    onClick={(e) => e.preventDefault()} // Mencegah aksi klik pada menu yang memiliki sub-menu
+                    onClick={(e) => e.preventDefault()}
                     className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white"
                   >
                     {menu.name}
@@ -98,6 +98,21 @@ const Navbar = () => {
                 )}
               </div>
             ))}
+          </div>
+
+          <div className="">
+            {/* <a
+              href="/"
+              className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white"
+            >
+              Indonesia
+            </a> */}
+            <button className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white">
+              Kontak Kami
+            </button>
+            {/* <button className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white">
+              Dark Mode
+            </button> */}
           </div>
 
           <div className="md:hidden">

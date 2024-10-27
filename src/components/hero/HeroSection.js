@@ -1,11 +1,32 @@
 import React from "react";
-import background from "../../assets/images/background.png";
+import background from "../../assets/images/icon-background.png";
+import Mobile from "../../assets/images/background.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gray-900">
-      <div className="grid max-w-screen-xl px-4 py-8 xl:py-36 xl:pt-44 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7 text-center lg:text-left pt-48 pb-48 lg:pt-0 lg:pb-0">
+    // <>
+    //   <section
+    //     style={{ backgroundImage: `url(${Mobile})` }} // Menggunakan inline style
+    //     className="bg-cover bg-center h-screen relative" // Menambahkan relative agar overlay bisa diatur posisinya
+    //   >
+    //     {/* Overlay */}
+    //     <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+    //     {/* Overlay hitam dengan opacity */}
+    //     <div className="flex items-center justify-center h-full relative z-10">
+    //       {" "}
+    //       {/* Menambahkan z-10 untuk mengangkat konten di atas overlay */}
+    //       <div className="text-white text-3xl">Hello</div>
+    //     </div>
+    //   </section>
+    // </>
+    <section
+      className={`h-screen bg-cover bg-center bg-no-repeat md:bg-none`}
+      style={{
+        backgroundImage: `url(${Mobile})`, // Hanya terlihat di layar mobile
+      }}
+    >
+      <div className="grid max-w-screen-xl px-4 pt-60 md:pt-36 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
+        <div className="mr-auto place-self-center lg:col-span-7 text-center lg:text-left lg:pb-0">
           <h1 className="max-w-2xl mb-8 text-4xl font-extrabold tracking-tight leading-none  md:text-5xl xl:text-6xl dark:text-white">
             Menyediakan Solusi Keuangan yang Tepat untuk Masa Depan Anda
           </h1>
@@ -38,7 +59,7 @@ const HeroSection = () => {
             Kontak Kami
           </a>
         </div>
-        <div className="hidden lg:mt-0 lg:col-span-4 ml-8 md:flex">
+        <div className="hidden lg:mt-0 lg:col-span-4  md:flex">
           <img src={background} className="w-[400px] h-auto" alt="mockup"></img>
         </div>
       </div>
