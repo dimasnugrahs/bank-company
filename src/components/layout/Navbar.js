@@ -61,7 +61,7 @@ const Navbar = () => {
             <h1 className="text-white font-bold">Logo</h1>
           </div>
 
-          <div className="hidden md:flex flex-grow justify-center space-x-4">
+          <div className="hidden md:flex flex-grow justify-center space-x-4 ">
             {menus.map((menu, index) => (
               <div key={index} className="relative group py-6">
                 {menu.subMenu ? (
@@ -142,19 +142,19 @@ const Navbar = () => {
       {/* Menu versi mobile */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
             {menus.map((menu, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative ">
                 {menu.subMenu === null ? (
                   <a
                     href={menu.href}
-                    className="text-white block px-3 py-2 rounded-md text-base font-medium"
+                    className="text-slate-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     {menu.name}
                   </a>
                 ) : (
                   <div className="group">
-                    <button className="text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <button className="text-slate-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                       {menu.name}
                     </button>
                     <div className="ml-4">
@@ -162,7 +162,7 @@ const Navbar = () => {
                         <a
                           href={sub.href}
                           key={subIndex}
-                          className="block px-4 py-2 text-gray-200"
+                          className="block px-4 py-2 text-slate-400 hover:text-white font-extralight"
                         >
                           {sub.name}
                         </a>
@@ -172,7 +172,7 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-            <button className="text-white block px-3 py-2 rounded-md text-base font-medium">
+            <button className="text-slate-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               Kontak Kami
             </button>
           </div>
