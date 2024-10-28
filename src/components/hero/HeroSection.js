@@ -10,10 +10,10 @@ const HeroSection = () => {
       <div className="hidden lg:block">
         <div
           style={{ backgroundImage: `url(${backgroundDesktop})` }}
-          className="bg-cover bg-center h-screen relative"
+          className="bg-cover bg-center h-screen w-full relative"
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="flex items-center justify-center h-full relative z-10 px-40">
+          <div className="flex items-center justify-center h-full relative z-10 px-32">
             <div className="mr-auto place-self-center lg:col-span-7 text-center lg:text-left ">
               <h1 className="max-w-2xl mb-8 text-4xl font-extrabold tracking-tight leading-none  md:text-5xl xl:text-6xl dark:text-white">
                 Menyediakan Solusi Keuangan yang Tepat untuk Masa Depan Anda
@@ -62,7 +62,7 @@ const HeroSection = () => {
       <div className="lg:hidden">
         <div
           style={{ backgroundImage: `url(${backgroundMobile})` }}
-          className="bg-cover bg-center h-screen w-auto relative"
+          className="bg-cover bg-center h-screen w-full relative"
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="flex items-center justify-center h-full relative z-10">
