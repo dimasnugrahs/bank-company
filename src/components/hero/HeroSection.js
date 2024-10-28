@@ -62,7 +62,7 @@ const HeroSection = () => {
       <div className="lg:hidden">
         <div
           style={{ backgroundImage: `url(${backgroundMobile})` }}
-          className="bg-cover bg-center h-dvh w-full relative"
+          className="bg-cover bg-center h-screen w-full relative"
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="flex items-center justify-center h-full relative z-10">
