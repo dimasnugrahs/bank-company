@@ -51,11 +51,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-10 transition-colors duration-300 ease-in-out ${
+      className={`container mx-auto px-36 fixed top-0 w-full z-20 transition-colors duration-300 ease-in-out md:${
         navbarBg ? "bg-slate-900" : "bg-transparent"
-      }`}
+      } ${navbarBg || isOpen ? "bg-slate-900" : "bg-transparent"}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between py-4 md:py-0">
           <div className="flex-shrink-0">
             <h1 className="text-white font-bold">Logo</h1>
@@ -100,7 +100,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="">
+          <div className="hidden md:flex">
             {/* <a
               href="/"
               className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white"
@@ -118,7 +118,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none"
+              className="text-white focus:outline-none z"
             >
               <svg
                 className="w-6 h-6"
@@ -172,6 +172,9 @@ const Navbar = () => {
                 )}
               </div>
             ))}
+            <button className="text-white block px-3 py-2 rounded-md text-base font-medium">
+              Kontak Kami
+            </button>
           </div>
         </div>
       )}
