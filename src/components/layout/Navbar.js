@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`container mx-auto px-6 md:px-36 fixed top-0 w-full z-20 transition-colors duration-300 ease-in-out md:${
+      className={`container mx-auto px-6 lg:px-36 fixed top-0 w-full z-20 transition-colors duration-300 ease-in-out md:${
         navbarBg ? "bg-slate-900" : "bg-transparent"
       } ${navbarBg || isOpen ? "bg-slate-900" : "bg-transparent"}`}
     >

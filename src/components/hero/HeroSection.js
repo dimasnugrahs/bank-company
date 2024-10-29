@@ -170,22 +170,25 @@ const HeroSection = () => {
       id: 1,
       image:
         "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Slide 1 Title",
-      description: "Description for Slide 1",
+      title: "Solusi Keuangan Anda, Lebih Mudah dan Terpercaya",
+      description:
+        "Memberikan kemudahan dan kepercayaan dalam setiap transaksi keuangan, kami hadir untuk memastikan layanan terbaik dan terpercaya bagi Anda, kapan saja dan di mana saja.",
     },
     {
       id: 2,
       image:
         "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Slide 2 Title",
-      description: "Description for Slide 2",
+      title: "Transformasi Bisnis Lebih Cerdas, Masa Depan Lebih Cerah",
+      description:
+        "Menggabungkan teknologi modern dan layanan profesional, kami mendukung pertumbuhan bisnis Anda dengan solusi yang inovatif dan efisien untuk menghadapi tantangan masa depan.",
     },
     {
       id: 3,
       image:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Slide 3 Title",
-      description: "Description for Slide 3",
+      title: "Terdepan Menuju Kesuksesan Anda",
+      description:
+        "Kami berkomitmen untuk menjadi mitra bisnis yang handal, menyediakan layanan lengkap dan strategi yang tepat guna memastikan kesuksesan jangka panjang Anda.",
     },
   ];
 
@@ -205,7 +208,7 @@ const HeroSection = () => {
 
   // Menggunakan useEffect untuk autoplay
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 3000); // Ganti slide setiap 3 detik
+    const slideInterval = setInterval(nextSlide, 7000); // Ganti slide setiap 7 detik
     return () => clearInterval(slideInterval); // Bersihkan interval saat komponen di-unmount
   }, []);
 
@@ -223,10 +226,12 @@ const HeroSection = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
-            <div className="text-center text-white max-w-md">
-              <h2 className="text-3xl font-bold mb-4">{slide.title}</h2>
-              <p className="text-lg">{slide.description}</p>
+          <div className="flex items-center px-6 md:px-0 justify-center h-full bg-black bg-opacity-50">
+            <div className="text-center text-white max-w-xl">
+              <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
+              <p className="hidden md:block text-md font-light italic">
+                {slide.description}
+              </p>
             </div>
           </div>
         </div>
@@ -235,13 +240,13 @@ const HeroSection = () => {
       {/* Tombol navigasi */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-transparent text-white px-4 py-2 rounded-full"
+        className="hidden md:block absolute top-1/2 left-4 transform -translate-y-1/2 bg-transparent text-white px-4 py-2 rounded-full"
       >
         &#10094;
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-transparent text-white px-4 py-2 rounded-full"
+        className="hidden md:block absolute top-1/2 right-4 transform -translate-y-1/2 bg-transparent text-white px-4 py-2 rounded-full"
       >
         &#10095;
       </button>
