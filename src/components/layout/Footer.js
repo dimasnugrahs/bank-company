@@ -16,7 +16,7 @@ const Footer = () => {
                 BPR Lorem Ipsum
               </span>
             </a>
-            <p className=" lg:mt-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <p className="mt-10 mb-2 lg:mb-0 lg:mt-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               BPR Lorem Ipsum Kantor Pusat
             </p>
             <p className=" text-sm  text-gray-900 uppercase dark:text-gray-400">
@@ -28,14 +28,14 @@ const Footer = () => {
             <p className=" text-sm  text-gray-900 uppercase dark:text-gray-400">
               08.00 WITA - 17.00 WITA
             </p>
-            <div className="border border-white rounded-lg lg:mt-10 px-4 py-4">
+            {/* <div className="border border-white rounded-lg lg:mt-10 px-4 py-4">
               <p className=" text-sm  text-gray-900  dark:text-white">
                 BPR Lorem Ipsum Berizin dan Diawasi oleh Otoritas Jasa Keuangan
               </p>
               <p className=" text-sm  text-gray-900  dark:text-white">
                 BPR Lorem Ipsum Merupakan Bank Peserta Penjaminan LPS
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -108,6 +108,24 @@ const Footer = () => {
                   <a href="#" className="hover:underline">
                     Facebook
                   </a>
+                </li>
+              </ul>
+            </div>
+            <div className="lg:hidden">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                BPR LOREM IPSUM
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400">
+                <li className="mb-4">
+                  <p className="text-gray-500">
+                    BPR Lorem Ipsum Berizin dan Diawasi oleh Otoritas Jasa
+                    Keuangan serta Bank Peserta Penjaminan LPS
+                  </p>
+                </li>
+                <li>
+                  <p className="text-gray-500">
+                    BPR Lorem Ipsum merupakan Bank Peserta Penjaminan LPS
+                  </p>
                 </li>
               </ul>
             </div>
@@ -215,6 +233,12 @@ const Footer = () => {
               <span className="sr-only">Dribbble account</span>
             </a>
           </div>
+        </div>
+        <div className="hidden lg:block">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            BPR Lorem Ipsum Berizin dan Diawasi oleh Otoritas Jasa Keuangan
+            serta Bank Peserta Penjaminan LPS
+          </span>
         </div>
       </div>
     </footer>
