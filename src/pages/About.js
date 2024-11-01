@@ -1,10 +1,13 @@
 import React from "react";
-import HeroSection from "../components/hero/HeroSection";
+import Jumbotron from "../components/hero/Jumbotron";
 
 const About = () => {
   return (
     <div>
-      <HeroSection />
+      <Jumbotron
+        heading={"This title is dynamic for about page"}
+        description={"this desc is dyinamic too for about page description"}
+      />
     </div>
   );
 };
