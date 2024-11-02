@@ -3,7 +3,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Styling di src
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "barlow-condensed": ['"Barlow Condensed"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

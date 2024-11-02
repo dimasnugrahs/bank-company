@@ -49,7 +49,7 @@ const ServicesSection = () => {
                   <p className="mt-1.5 mb-4 text-sm leading-6 text-secondary-500 italic">
                     {product.subtitle}
                   </p>
-                  <p className="hidden md:block mt-1.5 text-sm leading-6 text-secondary-500 text-justify px-4">
+                  <p className="hidden lg:block mt-1.5 text-sm leading-6 text-secondary-500 text-justify px-4">
                     {product.description}
                   </p>
                 </a>
