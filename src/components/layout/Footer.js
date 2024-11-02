@@ -109,7 +109,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="lg:hidden">
-              <h2 className="mb-6 text-sm font-semibold  uppercasetext-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase text-white">
                 BPR LOREM IPSUM
               </h2>
               <ul className="text-gray-400">
