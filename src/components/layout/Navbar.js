@@ -112,9 +112,12 @@ const Navbar = () => {
             >
               Indonesia
             </a> */}
-            <button className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white">
+            <a
+              href="/contact"
+              className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white"
+            >
               Kontak Kami
-            </button>
+            </a>
             {/* <button className="text-slate-300 px-4 py-2 rounded-md text-sm font-medium hover:text-white">
               Dark Mode
             </button> */}
@@ -177,9 +180,12 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-            <button className="text-slate-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <a
+              href="/contact"
+              className="text-slate-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
               Kontak Kami
-            </button>
+            </a>
           </div>
         </div>
       )}

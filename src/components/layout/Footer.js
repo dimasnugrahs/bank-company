@@ -13,18 +13,26 @@ const Footer = () => {
                 BPR Lorem Ipsum
               </span>
             </a>
-            <p className="mt-10 mb-2 lg:mb-0 lg:mt-6 text-sm font-semibold  uppercase text-white">
-              BPR Lorem Ipsum Kantor Pusat
-            </p>
-            <p className=" text-sm   uppercase text-gray-400">
-              Jl. Raya Batubulan No. 99x, Sukawati, Gianyar - Bali 80242
-            </p>
-            <p className="lg:mt-6 text-sm   uppercase text-gray-400">
-              Senin - Jumat
-            </p>
-            <p className=" text-sm   uppercase text-gray-400">
-              08.00 WITA - 17.00 WITA
-            </p>
+            <div className="lg:ml-12">
+              <p className="mt-10 mb-2 lg:mb-0 lg:mt-6 text-sm font-semibold  uppercase text-white">
+                BPR Lorem Ipsum Kantor Pusat
+              </p>
+              <p className=" text-sm   uppercase text-gray-400">
+                Jl. Raya Batubulan No. 99x, Sukawati, Gianyar - Bali 80242
+              </p>
+              <p className="mt-10 mb-2 lg:mb-0 lg:mt-6 text-sm font-semibold  uppercase text-white">
+                BPR Lorem Ipsum Kantor Cabang
+              </p>
+              <p className=" text-sm   uppercase text-gray-400">
+                Jl. Raya Singapadu No. 88x, Sukawati, Gianyar - Bali 80242
+              </p>
+              <p className="lg:mt-6 text-sm   uppercase text-gray-400">
+                Senin - Jumat
+              </p>
+              <p className=" text-sm   uppercase text-gray-400">
+                08.00 WITA - 17.00 WITA
+              </p>
+            </div>
             {/* <div className="border border-white rounded-lg lg:mt-10 px-4 py-4">
               <p className=" text-sm    text-white">
                 BPR Lorem Ipsum Berizin dan Diawasi oleh Otoritas Jasa Keuangan

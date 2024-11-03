@@ -19,7 +19,6 @@ function App() {
         <Route path="/services" element={<Product />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/report" element={<Report />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Layout>
   );

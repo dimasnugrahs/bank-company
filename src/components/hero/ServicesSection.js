@@ -24,11 +24,11 @@ const ServicesSection = () => {
   return (
     <div>
       <div className="bg-gray-200 px-6 pt-10 pb-24">
-        <div id="features" className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl">
           <p className="text-center text-base  leading-7 text-primary-500">
             Produk Terbaik Kami.
           </p>
-          <h2 className="text-center font-display text-2xl md:text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+          <h2 className="text-center font-display text-2xl  font-bold tracking-tight text-slate-900 md:text-4xl">
             Solusi perbankan yang aman, nyaman dan terpercaya.
           </h2>
           <ul className="mt-8 md:mt-16 px-10 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3">

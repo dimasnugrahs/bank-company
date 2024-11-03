@@ -227,11 +227,11 @@ const HeroSection = () => {
           }}
         >
           <div className="flex items-center px-6 md:px-0 justify-center h-full bg-black bg-opacity-50">
-            <div className="text-center text-white max-w-xl">
-              <h2 className="font-barlow-condensed text-4xl font-bold mb-4">
+            <div className="text-center text-white max-w-xl lg:max-w-4xl">
+              <h2 className=" text-4xl lg:text-5xl font-bold mb-4">
                 {slide.title}
               </h2>
-              <p className="font-barlow-condensed hidden md:block text-md font-light italic">
+              <p className=" hidden md:block text-md font-light italic">
                 {slide.description}
               </p>
             </div>
