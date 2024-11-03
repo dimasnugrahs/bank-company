@@ -11,7 +11,7 @@ const ContactUs = () => {
             </h2>
             <a
               href="/contact"
-              className="flex items-center justify-center bg-slate-900 text-white text-center mx-40 h-16 px-4 py-2 rounded-md text-xl font-medium  hover:bg-slate-800"
+              className="flex items-center justify-center bg-slate-900 text-white lg:mx-40 h-16 px-4 py-2 rounded-md text-xl font-medium  hover:bg-slate-800"
             >
               Kontak Kami
             </a>
