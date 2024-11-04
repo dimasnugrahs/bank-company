@@ -2,13 +2,13 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container px-6 lg:px-36">
+    <div className="container mx-auto px-6 lg:px-36">
       <div className="gap-12 items-center py-8 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16">
         <div className="lg:w-full flex justify-center mx-auto">
           <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/80YB3gJe1pc?si=NfsqZ1127Cqk2WOH"
+              src="https://www.youtube.com/embed/TboWOSW7qCI?si=g9bwcKiLAQgkldfW"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

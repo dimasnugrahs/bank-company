@@ -1,41 +1,23 @@
 import React from "react";
 
-const WhyUs = () => {
+const VisionMission = () => {
   const priorities = [
     {
-      title: "Keamanan Terjamin",
+      title: "VISI",
       subtitle: "Kepercayaan Anda adalah Tanggung Jawab Kami",
       description:
         "Dengan teknologi keamanan tingkat tinggi dan sistem enkripsi terbaru, kami menjaga setiap transaksi Anda tetap aman. Komitmen kami adalah memberikan perlindungan terbaik bagi data dan aset Anda, memastikan pengalaman perbankan yang bebas dari risiko.",
     },
     {
-      title: "Layanan Nasabah yang Proaktif",
+      title: "MISI",
       subtitle: "Siap Membantu Kapanpun Anda Membutuhkan",
       description:
         "Kami menyediakan layanan nasabah yang responsif dan siap memberikan solusi tepat bagi kebutuhan Anda. Dengan layanan 24/7, kami hadir untuk memastikan bahwa pengalaman perbankan Anda selalu lancar, baik dalam konsultasi produk maupun bantuan transaksi.",
     },
-    {
-      title: "Solusi Keuangan Inovatif",
-      subtitle: "Produk Lengkap untuk Semua Tahapan Hidup",
-      description:
-        "Dari tabungan hingga kredit usaha, produk kami dirancang untuk memenuhi kebutuhan finansial Anda secara fleksibel dan mudah diakses. Kami terus mengembangkan layanan baru yang memudahkan Anda dalam mencapai tujuan keuangan, apapun targetnya.",
-    },
-    {
-      title: "Mendukung Pertumbuhan Finansial Anda",
-      subtitle: "Berkembang Bersama Menuju Masa Depan Cerah",
-      description:
-        "Kami berkomitmen untuk menjadi mitra terpercaya dalam perjalanan finansial Anda. Dengan layanan konsultasi finansial dan produk investasi yang transparan, kami membantu Anda merencanakan masa depan yang stabil dan sukses, baik secara personal maupun bisnis.",
-    },
   ];
   return (
-    <div className="px-6 pt-10 pb-24 ">
+    <div className="bg-gray-200 px-6 pt-10 pb-24 ">
       <div className="mx-auto max-w-6xl ">
-        <p className="text-center text-base  leading-7 text-primary-500">
-          Prioritas Terbaik Kami.
-        </p>
-        <h2 className="text-center font-display text-2xl font-bold tracking-tight text-slate-900 md:text-4xl">
-          Kenapa harus memilih BPR Lorem Ipsum?
-        </h2>
         <ul className="mt-8 md:mt-16 px-10 grid grid-cols-1 gap-6 text-slate-700 md:grid-cols-2">
           {priorities.map((priority, key) => (
             <li
@@ -66,4 +48,4 @@ const WhyUs = () => {
   );
 };
 
-export default WhyUs;
+export default VisionMission;
