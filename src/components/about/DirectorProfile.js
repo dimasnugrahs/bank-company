@@ -33,7 +33,7 @@ const DirectorProfile = () => {
         <h2 className="text-center font-display text-2xl  font-bold tracking-tight text-slate-900 md:text-2xl">
           Profil Pimpinan
         </h2>
-        <ul className="mt-8 text-center px-10 grid grid-cols-1 gap-6 text-slate-700 md:grid-cols-4">
+        <ul className="mt-8 text-center px-10 grid grid-cols-1 gap-6 text-slate-700 lg:grid-cols-4">
           {profiles.map((profile, key) => (
             <li
               key={key}

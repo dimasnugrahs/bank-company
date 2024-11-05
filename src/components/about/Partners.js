@@ -18,7 +18,7 @@ const Partners = () => {
   return (
     <div className="bg-gray-200 pt-10 pb-24 ">
       <div className="mx-auto max-w-6xl ">
-        <ul className="mt-8 md:mt-16 grid grid-cols-1 gap-10 text-slate-700 md:grid-cols-4">
+        <ul className="mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-10 text-slate-700 lg:grid-cols-4">
           {partners.map((partner, key) => (
             <li
               key={key}
