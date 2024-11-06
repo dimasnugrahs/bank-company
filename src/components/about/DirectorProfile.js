@@ -37,7 +37,7 @@ const DirectorProfile = () => {
           {profiles.map((profile, key) => (
             <li
               key={key}
-              className="rounded-xl bg-white px-6 py-8 shadow-sm hover:shadow-lg border"
+              className="rounded-xl bg-white px-4 py-4 shadow-sm hover:shadow-lg border"
             >
               <div className="group">
                 <img

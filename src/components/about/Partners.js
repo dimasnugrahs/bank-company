@@ -16,19 +16,16 @@ const Partners = () => {
     },
   ];
   return (
-    <div className="bg-gray-200 pt-10 pb-24 ">
+    <div className="bg-gray-200 pt-6 pb-20 ">
       <div className="mx-auto max-w-6xl ">
         <ul className="mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-10 text-slate-700 lg:grid-cols-4">
           {partners.map((partner, key) => (
-            <li
-              key={key}
-              className="rounded-xl shadow-sm hover:shadow-lg border"
-            >
-              <div className="group h-44 w-full place-content-center">
+            <li key={key} className="rounded-xl  border">
+              <div className="group h-12 w-full flex items-center justify-center">
                 <img
                   src={partner.href}
                   alt=""
-                  className="h-auto w-full object-cover rounded-md"
+                  className="h-auto w-24 object-cover rounded-md"
                 />
               </div>
             </li>

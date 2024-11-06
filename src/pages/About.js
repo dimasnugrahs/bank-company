@@ -4,6 +4,9 @@ import CompanyProfile from "../components/about/CompanyProfile";
 import VisionMission from "../components/about/VisionMission";
 import DirectorProfile from "../components/about/DirectorProfile";
 import Partners from "../components/about/Partners";
+import Reports from "../components/about/Reports";
+import ContactUs from "../components/hero/ContactUs";
+import Location from "../components/about/Location";
 
 const About = () => {
   return (
@@ -17,6 +20,9 @@ const About = () => {
       <VisionMission />
       <DirectorProfile />
       <Partners />
+      <Reports />
+      <ContactUs />
+      <Location />
     </div>
   );
 };
