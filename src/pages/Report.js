@@ -1,14 +1,13 @@
 import React from "react";
+import Jumbotron from "../components/hero/Jumbotron";
 
 const Report = () => {
   return (
     <div>
-      <h1 className="text-4xl mt-40 font-bold text-center text-blue-600">
-        Welcome to the Report Page
-      </h1>
-      <p className="text-center mt-4 text-gray-600">
-        This is the report page content.
-      </p>
+      <Jumbotron
+        heading={"This title is dynamic for report page"}
+        description={"this desc is dyinamic too for report page description"}
+      />
     </div>
   );
 };

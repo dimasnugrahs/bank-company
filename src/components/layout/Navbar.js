@@ -58,13 +58,13 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between py-4 lg:py-0">
-          <div className="flex-shrink-0">
+          <a href="/" className="flex-shrink-0">
             <img
               src={iconCompany}
               alt="Icon"
               className="max-w-8 border-white border rounded-full"
             ></img>
-          </div>
+          </a>
 
           <div className="hidden lg:flex flex-grow justify-center space-x-4 ">
             {menus.map((menu, index) => (
