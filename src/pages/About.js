@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Jumbotron from "../components/hero/Jumbotron";
 import CompanyProfile from "../components/about/CompanyProfile";
 import VisionMission from "../components/about/VisionMission";
@@ -9,6 +9,9 @@ import ContactUs from "../components/hero/ContactUs";
 import Location from "../components/about/Location";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Jumbotron

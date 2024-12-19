@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import background from "../../assets/images/icon-background.png";
-import backgroundDesktop from "../../assets/images/background.jpg";
-import backgroundMobile from "../../assets/images/desktop-background.jpg";
 
 // const HeroSection = () => {
 //   return (
@@ -213,7 +210,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -252,7 +249,7 @@ const HeroSection = () => {
       >
         &#10095;
       </button>
-    </section>
+    </div>
   );
 };
 

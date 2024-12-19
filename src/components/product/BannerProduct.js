@@ -1,6 +1,7 @@
 import React from "react";
 
 const BannerProduct = () => {
+  
   return (
     <section className="bg-white ">
       <div className="gap-16 items-center py-8 px-6 mx-auto max-w-screen-xl lg:grid lg:grid-cols-1 lg:py-16 lg:px-6 ">

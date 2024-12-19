@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Jumbotron = ({
   heading = "Terdepan Menuju Kesuksesan Anda",
   description = "Kami berkomitmen untuk menjadi mitra bisnis yang handal, menyediakan layanan lengkap dan strategi yang tepat guna memastikan kesuksesan jangka panjang Anda.",
 }) => {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden">
       <div
         className="absolute inset-0 transition-opacity duration-1000 opacity-100"
         style={{
@@ -23,7 +23,7 @@ const Jumbotron = ({
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

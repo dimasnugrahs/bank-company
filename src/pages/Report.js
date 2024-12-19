@@ -1,5 +1,6 @@
 import React from "react";
 import Jumbotron from "../components/hero/Jumbotron";
+import ReportDetail from "../components/report/ReportDetail";
 
 const Report = () => {
   return (
@@ -8,6 +9,8 @@ const Report = () => {
         heading={"This title is dynamic for report page"}
         description={"this desc is dyinamic too for report page description"}
       />
+
+      <ReportDetail />
     </div>
   );
 };

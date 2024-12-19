@@ -42,7 +42,7 @@ const WhyUs = () => {
               key={key}
               className="rounded-xl bg-white px-6 py-8 shadow-sm hover:shadow-lg border"
             >
-              <a href="/pricing" className="group">
+              <div className="group">
                 <img
                   src="https://www.svgrepo.com/show/530440/machine-vision.svg"
                   alt=""
@@ -57,7 +57,7 @@ const WhyUs = () => {
                 <p className="hidden lg:block mt-1.5 text-sm leading-6 text-secondary-500 text-justify px-4">
                   {priority.description}
                 </p>
-              </a>
+              </div>
             </li>
           ))}
         </ul>

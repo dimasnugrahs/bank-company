@@ -1,5 +1,4 @@
 import React from "react";
-import HeroSection from "../components/hero/HeroSection";
 import Jumbotron from "../components/hero/Jumbotron";
 import CardBlog from "../components/blog/CardBlog";
 
