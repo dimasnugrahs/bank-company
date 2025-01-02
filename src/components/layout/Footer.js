@@ -1,5 +1,5 @@
 import React from "react";
-import iconCompany from "../../assets/images/icon-company.png";
+import iconCompany from "../../assets/images/logo-company.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,9 +9,13 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to="https://flowbite.com/" className="flex items-center">
-              <img src={iconCompany} className="h-8 me-3" alt="FlowBite Logo" />
+              <img
+                src={iconCompany}
+                className="h-10 me-3"
+                alt="FlowBite Logo"
+              />
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                BPR Lorem Ipsum
+                BPR Restu Dewata
               </span>
             </Link>
             <div className="lg:ml-12">

@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import iconCompany from "../../assets/images/icon-company.png";
+import iconCompany from "../../assets/images/logo-company.png";
 import axios from "axios";
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
   const [navbarBg, setNavbarBg] = useState(false);
 
   const url = process.env.REACT_APP_API_URL;
-  const [product, setProducts] = useState([]);
+  // const [product, setProducts] = useState([]);
 
   const getProduct = async () => {
     try {
@@ -109,11 +109,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4 lg:py-0">
           <ul>
             <Link to="/" className="flex-shrink-0">
-              <img
-                src={iconCompany}
-                alt="Icon"
-                className="max-w-8 border-white border rounded-full"
-              ></img>
+              <img src={iconCompany} alt="Icon" className="max-w-10"></img>
             </Link>
           </ul>
 
