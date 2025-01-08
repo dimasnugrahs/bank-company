@@ -1,17 +1,17 @@
 import React from "react";
 import Jumbotron from "../components/hero/Jumbotron";
-import BlogDetail from "../components/blog/BlogDetail";
+import CardBlog from "../components/blog/CardBlog";
 
-const Blog = () => {
+const Blogs = () => {
   return (
     <div>
       <Jumbotron
         heading={"This title is dynamic for blog page"}
         description={"this desc is dyinamic too for blog page description"}
       />
-      <BlogDetail />
+      <CardBlog />
     </div>
   );
 };
 
-export default Blog;
+export default Blogs;

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const CardBlog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -83,29 +84,31 @@ const CardBlog = () => {
               key={key}
               className="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              <div className="py-4 px-3">
-                {Array.isArray(blog.images) && blog.images.length > 0 && (
-                  <img
-                    className="w-full h-48  object-cover rounded-lg"
-                    src={
-                      process.env.REACT_APP_API_URL +
-                      "/images/" +
-                      blog.images[mainImageIndex]
-                    }
-                    alt={blog.name}
-                  />
-                )}
-                <div className="text-left py-4 px-2">
-                  <h3 className="text-sm font-bold text-gray-800">
-                    {blog.name}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-600">
-                    {blog.description.length > 50
-                      ? blog.description.substring(0, 50) + "..."
-                      : blog.description}
-                  </p>
+              <Link to={`/blogs/${blog.id}`} className="group">
+                <div className="py-4 px-3">
+                  {Array.isArray(blog.images) && blog.images.length > 0 && (
+                    <img
+                      className="w-full h-48  object-cover rounded-lg"
+                      src={
+                        process.env.REACT_APP_API_URL +
+                        "/images/" +
+                        blog.images[mainImageIndex]
+                      }
+                      alt={blog.name}
+                    />
+                  )}
+                  <div className="text-left py-4 px-2">
+                    <h3 className="text-sm font-bold text-gray-800">
+                      {blog.name}
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-600">
+                      {blog.description.length > 50
+                        ? blog.description.substring(0, 50) + "..."
+                        : blog.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </ul>

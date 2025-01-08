@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+          <div className="mb-6 md:mb-0 mr-5">
             <Link to="https://flowbite.com/" className="flex items-center">
               <img
                 src={iconCompany}
-                className="h-10 me-3"
+                className="h-10 me-3 hidden lg:flex"
                 alt="FlowBite Logo"
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
@@ -24,6 +24,12 @@ const Footer = () => {
               </p>
               <p className=" text-sm   uppercase text-gray-400">
                 Jl. Raya Batubulan No. 99x, Sukawati, Gianyar - Bali 80242
+              </p>
+              <p className="mt-10 mb-2 lg:mb-0 lg:mt-6 text-sm font-semibold  uppercase text-white">
+                BPR Lorem Ipsum Kantor Cabang
+              </p>
+              <p className=" text-sm   uppercase text-gray-400">
+                Jl. Raya Singapadu No. 88x, Sukawati, Gianyar - Bali 80242
               </p>
               <p className="mt-10 mb-2 lg:mb-0 lg:mt-6 text-sm font-semibold  uppercase text-white">
                 BPR Lorem Ipsum Kantor Cabang

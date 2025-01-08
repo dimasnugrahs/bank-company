@@ -5,23 +5,36 @@ import { Link } from "react-router-dom";
 const ServicesSection = () => {
   const [products, setProducts] = useState([]);
 
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   const url = process.env.REACT_APP_API_URL;
 
   const getProduct = async () => {
     try {
+      setLoading(true);
       const response = await axios.get(url + "/products");
       console.log("response", response);
       const product = response.data;
       console.log("product", product);
       setProducts(product);
     } catch (err) {
+      setError("Loading...");
       console.log(err);
+    } finally {
+      setLoading(false); // Set loading ke false setelah selesai mengambil data
     }
   };
 
   useEffect(() => {
     getProduct();
   }, []);
+
+  if (error) {
+    <div className="bg-red-200 py-6 rounded-sm border border-red-400">
+      <p className="text-red-500 text-lg text-center">{error}</p>
+    </div>;
+  }
 
   return (
     <div className="bg-gray-200 px-6 pt-10 pb-24">

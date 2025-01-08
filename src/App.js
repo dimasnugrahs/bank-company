@@ -8,6 +8,7 @@ import Layout from "./pages/Layout";
 import Product from "./pages/Product";
 import Blog from "./pages/Blog";
 import Report from "./pages/Report";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Product />} />
         <Route path="/products/:id" element={<Product />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog" element={<Blogs />} />
+        <Route path="/blogs/:id" element={<Blog />} />
         <Route path="/report" element={<Report />} />
       </Routes>
     </Layout>

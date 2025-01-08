@@ -7,6 +7,7 @@ import axios from "axios";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [navbarBg, setNavbarBg] = useState(false);
+  const [error, setError] = useState(null);
 
   const url = process.env.REACT_APP_API_URL;
   // const [product, setProducts] = useState([]);
@@ -32,6 +33,7 @@ const Navbar = () => {
       );
     } catch (err) {
       console.error("Gagal mengambil data produk:", err);
+      setError("Loading...");
     }
   };
 
@@ -147,6 +149,9 @@ const Navbar = () => {
                           {sub.name}
                         </Link>
                       ))}
+                      <p className="block px-6 py-4 text-slate-900 border-solid border-b border-grey-500">
+                        {error}
+                      </p>
                     </div>
                   )}
                 </ul>
