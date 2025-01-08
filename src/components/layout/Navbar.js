@@ -149,9 +149,6 @@ const Navbar = () => {
                           {sub.name}
                         </Link>
                       ))}
-                      <p className="block px-6 py-4 text-slate-900 border-solid border-b border-grey-500">
-                        {error}
-                      </p>
                     </div>
                   )}
                 </ul>
